@@ -3,7 +3,9 @@ FROM python:3.8-alpine3.17
 ENV SRC_DIR /server
 COPY ./server.py ${SRC_DIR}/
 WORKDIR ${SRC_DIR}
-RUN mkdir /app
+#RUN mkdir /app
+
+COPY ./app /
 
 ENV PYTHONUNBUFFERED=1
 
