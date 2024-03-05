@@ -4,7 +4,6 @@ ENV SRC_DIR /server
 COPY ./server.py ${SRC_DIR}/
 WORKDIR ${SRC_DIR}
 RUN mkdir /app
-RUN pip install mysql-connector-python
 
 ENV PYTHONUNBUFFERED=1
 
